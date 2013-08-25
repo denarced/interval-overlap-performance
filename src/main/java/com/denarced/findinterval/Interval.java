@@ -36,6 +36,10 @@ public class Interval {
                         )
                     );
                 }
+
+                if (intervali.getEnd() < intervalj.getStart()) {
+                    break;
+                }
             }
         }
 
