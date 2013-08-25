@@ -22,7 +22,7 @@ public class Interval {
         for (int i = 0; i < intervalList.size() - 1; i++) {
             final Interval intervali =  intervalList.get(i);
 
-            for (int j = 0; j < intervalList.size(); j++) {
+            for (int j = i; j < intervalList.size(); j++) {
                 final Interval intervalj = intervalList.get(j);
 
                 if (intervalj.getStart() < intervali.getEnd() &&
